@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TestApp"
+             x:Class="TestApp.MainPage">
+
+  <StackLayout Orientation="Vertical">
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Use Https" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Switch x:Name="Switch" IsVisible="True" VerticalOptions="FillAndExpand" HorizontalOptions="EndAndExpand"/>
+    </StackLayout>
+    <Entry x:Name="NameEntry"/>
+    <Button Text="Submit" Clicked="Button_OnClicked"/>
+    <ScrollView>
+      <Label HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="LogLabel" LineBreakMode="WordWrap" />
+    </ScrollView>
+  </StackLayout>
+</ContentPage>
